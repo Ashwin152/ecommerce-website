@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEase | Online Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background: #111;
+            color: white;
+            padding: 15px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 28px;
+            color: #ff9800;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(to right, #ff9800, #ff5722);
+            color: white;
+            padding: 80px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text button {
+            background: white;
+            color: #ff5722;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .hero-text button:hover {
+            background: #f1f1f1;
+        }
+
+        .hero img {
+            width: 350px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            padding: 60px;
+        }
+
+        .products h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0 5px;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #ff5722;
+            margin: 10px 0;
+            font-weight: 600;
+        }
+
+        .product-card button {
+            background: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .product-card button:hover {
+            background: #e64a19;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer span {
+            color: #ff9800;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 30px;
+            }
+
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>ShopEase</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Best Deals on Latest Products</h2>
+            <p>Shop the latest fashion, electronics and accessories at unbeatable prices.</p>
+            <button>Shop Now</button>
+        </div>
+        <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Shopping">
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+        <h2>Featured Products</h2>
+
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1d5" alt="Product">
+                <h3>Smart Watch</h3>
+                <p>Stylish & modern smartwatch</p>
+                <div class="price">₹3,999</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f" alt="Product">
+                <h3>DSLR Camera</h3>
+                <p>High quality photography</p>
+                <div class="price">₹29,999</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product">
+                <h3>Running Shoes</h3>
+                <p>Comfortable sports shoes</p>
+                <div class="price">₹2,499</div>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f" alt="Product">
+                <h3>Wireless Headphones</h3>
+                <p>Noise cancelling headphones</p>
+                <div class="price">₹4,999</div>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 <span>ShopEase</span>. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
